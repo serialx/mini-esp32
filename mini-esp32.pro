@@ -1,4 +1,4 @@
-update=2020 November 01, Sunday 21:23:06
+update=2020 November 01, Sunday 22:34:44
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=esp32-dev.net
+LastNetListRead=mini-esp32.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -48,9 +48,6 @@ ViaDrill1=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
-dPairWidth2=0.261112
-dPairGap2=0.2032
-dPairViaGap2=0.2032
 SilkLineWidth=0.12
 SilkTextSizeV=1
 SilkTextSizeH=1
@@ -74,7 +71,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
