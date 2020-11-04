@@ -351,17 +351,12 @@ F 4 "C25741" H 1100 1850 50  0001 C CNN "LCSC Part #"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 1000 1100 1100
-Wire Wire Line
 	1100 1500 1200 1500
 Connection ~ 1100 1500
 Wire Wire Line
 	1100 1500 1100 1750
 Wire Wire Line
-	1500 1100 1100 1100
-Connection ~ 1100 1100
-Wire Wire Line
-	1100 1100 1100 1500
+	1500 1100 1450 1100
 $Comp
 L power:GND #PWR0114
 U 1 1 5F874E2F
@@ -1465,4 +1460,9 @@ NoConn ~ 10150 3650
 NoConn ~ 10150 3900
 NoConn ~ 10150 4150
 NoConn ~ 10150 4400
+Wire Wire Line
+	1450 1100 1450 1500
+Connection ~ 1450 1500
+Wire Wire Line
+	1100 1000 1100 1500
 $EndSCHEMATC
