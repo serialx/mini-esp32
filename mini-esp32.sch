@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Mini ESP32"
 Date "2020-10-11"
-Rev "2.0"
+Rev "3.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -374,28 +374,12 @@ Wire Wire Line
 	1800 1300 1800 1500
 Wire Wire Line
 	1800 1500 1750 1500
-$Comp
-L Device:R_Small R3
-U 1 1 5F87DCF0
-P 2250 1650
-F 0 "R3" H 2309 1696 50  0000 L CNN
-F 1 "100k" H 2309 1605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2250 1650 50  0001 C CNN
-F 3 "~" H 2250 1650 50  0001 C CNN
-F 4 "C25741" H 2250 1650 50  0001 C CNN "LCSC Part #"
-	1    2250 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2750 1650 2800 1650
 Wire Wire Line
 	2800 1500 2250 1500
 Wire Wire Line
-	2250 1550 2250 1500
-Wire Wire Line
 	2800 1800 2700 1800
-Wire Wire Line
-	2250 1800 2250 1750
 Wire Wire Line
 	1950 1500 1950 1550
 Wire Wire Line
@@ -595,10 +579,10 @@ L Device:R_Small R7
 U 1 1 5F8FAED2
 P 3750 4700
 F 0 "R7" V 3554 4700 50  0000 C CNN
-F 1 "10k" V 3645 4700 50  0000 C CNN
+F 1 "1k" V 3645 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 3750 4700 50  0001 C CNN
 F 3 "~" H 3750 4700 50  0001 C CNN
-F 4 "C25744" H 3750 4700 50  0001 C CNN "LCSC Part #"
+F 4 "C11702" H 3750 4700 50  0001 C CNN "LCSC Part #"
 	1    3750 4700
 	0    1    1    0   
 $EndComp
@@ -607,10 +591,10 @@ L Device:R_Small R8
 U 1 1 5F8FC4FE
 P 3750 5350
 F 0 "R8" V 3554 5350 50  0000 C CNN
-F 1 "10k" V 3645 5350 50  0000 C CNN
+F 1 "1k" V 3645 5350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 3750 5350 50  0001 C CNN
 F 3 "~" H 3750 5350 50  0001 C CNN
-F 4 "C25744" H 3750 5350 50  0001 C CNN "LCSC Part #"
+F 4 "C11702" H 3750 5350 50  0001 C CNN "LCSC Part #"
 	1    3750 5350
 	0    1    1    0   
 $EndComp
@@ -743,44 +727,12 @@ UD+
 Text GLabel 8000 1500 0    50   Input ~ 0
 UD-
 NoConn ~ 8000 1200
-$Comp
-L Device:R_Small R12
-U 1 1 5F962BCD
-P 8950 1000
-F 0 "R12" H 8891 954 50  0000 R CNN
-F 1 "2.4k" H 8891 1045 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 8950 1000 50  0001 C CNN
-F 3 "~" H 8950 1000 50  0001 C CNN
-F 4 "C25882" H 8950 1000 50  0001 C CNN "LCSC Part #"
-	1    8950 1000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R13
-U 1 1 5F9631E2
-P 9250 1000
-F 0 "R13" H 9309 1046 50  0000 L CNN
-F 1 "2.4k" H 9309 955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 9250 1000 50  0001 C CNN
-F 3 "~" H 9250 1000 50  0001 C CNN
-F 4 "C25882" H 9250 1000 50  0001 C CNN "LCSC Part #"
-	1    9250 1000
-	1    0    0    -1  
-$EndComp
-Text GLabel 8950 850  1    50   Input ~ 0
+Text GLabel 8950 1200 2    50   Input ~ 0
 TXD0
-Text GLabel 9250 850  1    50   Input ~ 0
+Text GLabel 8950 1100 2    50   Input ~ 0
 RXD0
 Wire Wire Line
 	8800 1100 8950 1100
-Wire Wire Line
-	8950 900  8950 850 
-Wire Wire Line
-	8800 1200 9250 1200
-Wire Wire Line
-	9250 1200 9250 1100
-Wire Wire Line
-	9250 900  9250 850 
 Text GLabel 8800 1800 2    50   Input ~ 0
 DTR
 Text GLabel 8800 1900 2    50   Input ~ 0
@@ -1584,4 +1536,8 @@ Wire Wire Line
 	6550 6650 6550 6850
 Text GLabel 4150 2000 0    50   Input ~ 0
 BAT-
+Wire Wire Line
+	8800 1200 8950 1200
+Wire Wire Line
+	2250 1500 2250 1800
 $EndSCHEMATC
