@@ -377,14 +377,9 @@ Wire Wire Line
 Wire Wire Line
 	2750 1650 2800 1650
 Wire Wire Line
-	2800 1500 2250 1500
-Wire Wire Line
 	2800 1800 2700 1800
 Wire Wire Line
 	1950 1500 1950 1550
-Wire Wire Line
-	1950 1500 2250 1500
-Connection ~ 2250 1500
 $Comp
 L power:GND #PWR0115
 U 1 1 5F89C02D
@@ -471,8 +466,6 @@ Wire Wire Line
 	6700 1600 6700 1350
 Text GLabel 6700 1350 1    50   Input ~ 0
 RESET
-Wire Notes Line
-	4900 2350 4900 450 
 Text Notes 650  700  0    50   ~ 0
 POWER AND FILTERING
 Text Notes 5050 700  0    50   ~ 0
@@ -551,25 +544,25 @@ $EndComp
 Wire Wire Line
 	3750 3700 3750 3600
 $Comp
-L Transistor_BJT:S8050 Q2
+L Device:Q_NPN_BEC Q2
 U 1 1 5F8F9385
 P 4200 4700
 F 0 "Q2" H 4390 4746 50  0000 L CNN
 F 1 "S8050" H 4390 4655 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 4625 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 4200 4700 50  0001 L CNN
+F 3 "" H 4200 4700 50  0001 L CNN
 F 4 "C2146" H 4200 4700 50  0001 C CNN "LCSC Part #"
 	1    4200 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:S8050 Q3
+L Device:Q_NPN_BEC Q3
 U 1 1 5F8FA064
 P 4200 5350
 F 0 "Q3" H 4390 5304 50  0000 L CNN
 F 1 "S8050" H 4390 5395 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 5275 50  0001 L CIN
-F 3 "http://www.unisonic.com.tw/datasheet/S8050.pdf" H 4200 5350 50  0001 L CNN
+F 3 "" H 4200 5350 50  0001 L CNN
 F 4 "C2146" H 4200 5350 50  0001 C CNN "LCSC Part #"
 	1    4200 5350
 	1    0    0    1   
@@ -607,8 +600,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 4700 3650 4700
 Wire Wire Line
-	3850 4700 4000 4700
-Wire Wire Line
 	3350 5500 3350 5350
 Wire Wire Line
 	3350 5350 3650 5350
@@ -626,8 +617,6 @@ Wire Wire Line
 	4300 5150 4300 5100
 Wire Wire Line
 	4300 4950 4300 4900
-Wire Wire Line
-	3850 5350 4000 5350
 Text GLabel 4400 4450 2    50   Input ~ 0
 GPIO0
 Text GLabel 4400 5600 2    50   Input ~ 0
@@ -749,12 +738,6 @@ Text Notes 7050 700  0    50   ~ 0
 USB TO SERIAL
 Wire Notes Line
 	500  2400 11200 2400
-Connection ~ 4000 4700
-Wire Wire Line
-	4000 4700 4150 4700
-Connection ~ 4000 5350
-Wire Wire Line
-	4000 5350 4150 5350
 Wire Wire Line
 	3350 4950 4150 4950
 Wire Wire Line
@@ -939,9 +922,9 @@ U 1 1 5F9FD3B6
 P 3850 7050
 F 0 "R9" V 3654 7050 50  0000 C CNN
 F 1 "2.4k" V 3745 7050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3850 7050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3850 7050 50  0001 C CNN
 F 3 "~" H 3850 7050 50  0001 C CNN
-F 4 "C25882" H 3850 7050 50  0001 C CNN "LCSC Part #"
+F 4 "C22940" H 3850 7050 50  0001 C CNN "LCSC Part #"
 	1    3850 7050
 	0    1    1    0   
 $EndComp
@@ -975,8 +958,6 @@ Wire Notes Line
 	500  6000 4900 6000
 Text Notes 650  6200 0    50   ~ 0
 LIPO CHARGING
-Wire Notes Line
-	4900 2400 4900 7800
 Text Notes 5100 4550 0    50   ~ 0
 LED INDICATOR
 Wire Notes Line
@@ -1351,12 +1332,12 @@ Wire Wire Line
 $Comp
 L power:+BATT #PWR0107
 U 1 1 5FBE7D4B
-P 5200 5850
-F 0 "#PWR0107" H 5200 5700 50  0001 C CNN
-F 1 "+BATT" H 5215 6023 50  0000 C CNN
-F 2 "" H 5200 5850 50  0001 C CNN
-F 3 "" H 5200 5850 50  0001 C CNN
-	1    5200 5850
+P 5200 5800
+F 0 "#PWR0107" H 5200 5650 50  0001 C CNN
+F 1 "+BATT" H 5215 5973 50  0000 C CNN
+F 2 "" H 5200 5800 50  0001 C CNN
+F 3 "" H 5200 5800 50  0001 C CNN
+	1    5200 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1398,10 +1379,10 @@ L Device:R_Small R15
 U 1 1 5FC2A966
 P 6550 6950
 F 0 "R15" H 6609 6996 50  0000 L CNN
-F 1 "2k" H 6609 6905 50  0000 L CNN
+F 1 "1k" H 6609 6905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 6950 50  0001 C CNN
 F 3 "~" H 6550 6950 50  0001 C CNN
-F 4 "C4109" H 6550 6950 50  0001 C CNN "LCSC Part #"
+F 4 "C11702" H 6550 6950 50  0001 C CNN "LCSC Part #"
 	1    6550 6950
 	1    0    0    -1  
 $EndComp
@@ -1490,18 +1471,12 @@ Wire Wire Line
 	4150 2000 4200 2000
 Wire Wire Line
 	4150 1900 4200 1900
-Wire Wire Line
-	5400 6250 5200 6250
-Connection ~ 5200 6250
-Wire Wire Line
-	5200 6250 5200 6000
-Text GLabel 5300 6000 2    50   Input ~ 0
+Text GLabel 5300 5900 2    50   Input ~ 0
 BAT+
 Wire Wire Line
-	5300 6000 5200 6000
-Connection ~ 5200 6000
+	5300 5900 5200 5900
 Wire Wire Line
-	5200 6000 5200 5850
+	5200 5900 5200 5800
 Text GLabel 5300 7100 2    50   Input ~ 0
 BAT-
 Wire Wire Line
@@ -1539,5 +1514,51 @@ BAT-
 Wire Wire Line
 	8800 1200 8950 1200
 Wire Wire Line
-	2250 1500 2250 1800
+	1950 1500 2250 1500
+$Comp
+L Device:R_Small R3
+U 1 1 5FB3AA5C
+P 2250 1650
+F 0 "R3" H 2309 1696 50  0000 L CNN
+F 1 "10k" H 2309 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2250 1650 50  0001 C CNN
+F 3 "~" H 2250 1650 50  0001 C CNN
+F 4 "C25744" H 2250 1650 50  0001 C CNN "LCSC Part #"
+	1    2250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1550 2250 1500
+Connection ~ 2250 1500
+Wire Wire Line
+	2250 1500 2800 1500
+Wire Wire Line
+	2250 1750 2250 1800
+Wire Wire Line
+	3850 5350 4000 5350
+Wire Wire Line
+	3850 4700 4000 4700
+NoConn ~ 5400 6750
+$Comp
+L Device:R_Small R12
+U 1 1 5FBAC8E8
+P 5200 6100
+F 0 "R12" V 5004 6100 50  0000 C CNN
+F 1 "100R" V 5095 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5200 6100 50  0001 C CNN
+F 3 "~" H 5200 6100 50  0001 C CNN
+F 4 "C25076" H 5200 6100 50  0001 C CNN "LCSC Part #"
+	1    5200 6100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5200 5900 5200 6000
+Connection ~ 5200 5900
+Wire Notes Line
+	4900 500  4900 7800
+Wire Wire Line
+	5400 6250 5200 6250
+Connection ~ 5200 6250
+Wire Wire Line
+	5200 6250 5200 6200
 $EndSCHEMATC
