@@ -745,22 +745,8 @@ F 3 "" H 950 6550 50  0001 C CNN
 	1    950  6550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5F9C4288
-P 1300 6600
-F 0 "R2" V 1104 6600 50  0000 C CNN
-F 1 "0.1R" V 1195 6600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 1300 6600 50  0001 C CNN
-F 3 "~" H 1300 6600 50  0001 C CNN
-F 4 "C25334" H 1300 6600 50  0001 C CNN "LCSC Part #"
-	1    1300 6600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	950  6550 950  6600
-Wire Wire Line
-	950  6600 1200 6600
 $Comp
 L Device:C_Small C1
 U 1 1 5F9CA5C2
@@ -1645,4 +1631,18 @@ F 3 "~" H 4200 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4200 1900
+$Comp
+L Device:D_Schottky D4
+U 1 1 5FCD5A57
+P 1250 6600
+F 0 "D4" H 1250 6383 50  0000 C CNN
+F 1 "B5819W" H 1250 6474 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1250 6600 50  0001 C CNN
+F 3 "~" H 1250 6600 50  0001 C CNN
+F 4 "C8598" H 1250 6600 50  0001 C CNN "LCSC Part #"
+	1    1250 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	950  6600 1100 6600
 $EndSCHEMATC
