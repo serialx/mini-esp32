@@ -16,67 +16,67 @@ $EndDescr
 $Comp
 L Device:C_Small C4
 U 1 1 5F831A86
-P 3300 3300
-F 0 "C4" H 3392 3346 50  0000 L CNN
-F 1 "22u" H 3392 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3300 3300 50  0001 C CNN
-F 3 "~" H 3300 3300 50  0001 C CNN
-F 4 "C45783" H 3300 3300 50  0001 C CNN "LCSC Part #"
-	1    3300 3300
+P 2750 3300
+F 0 "C4" H 2842 3346 50  0000 L CNN
+F 1 "22u" H 2842 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2750 3300 50  0001 C CNN
+F 3 "~" H 2750 3300 50  0001 C CNN
+F 4 "C45783" H 2750 3300 50  0001 C CNN "LCSC Part #"
+	1    2750 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C6
 U 1 1 5F832043
-P 3650 3300
-F 0 "C6" H 3742 3346 50  0000 L CNN
-F 1 "100n" H 3742 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3650 3300 50  0001 C CNN
-F 3 "~" H 3650 3300 50  0001 C CNN
-F 4 "C1525" H 3650 3300 50  0001 C CNN "LCSC Part #"
-	1    3650 3300
+P 3100 3300
+F 0 "C6" H 3192 3346 50  0000 L CNN
+F 1 "100n" H 3192 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3100 3300 50  0001 C CNN
+F 3 "~" H 3100 3300 50  0001 C CNN
+F 4 "C1525" H 3100 3300 50  0001 C CNN "LCSC Part #"
+	1    3100 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5F832E31
-P 3300 3100
-F 0 "#PWR0101" H 3300 2950 50  0001 C CNN
-F 1 "+3.3V" H 3315 3273 50  0000 C CNN
-F 2 "" H 3300 3100 50  0001 C CNN
-F 3 "" H 3300 3100 50  0001 C CNN
-	1    3300 3100
+P 2750 3100
+F 0 "#PWR0101" H 2750 2950 50  0001 C CNN
+F 1 "+3.3V" H 2765 3273 50  0000 C CNN
+F 2 "" H 2750 3100 50  0001 C CNN
+F 3 "" H 2750 3100 50  0001 C CNN
+	1    2750 3100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5F8345C8
-P 3300 3500
-F 0 "#PWR0102" H 3300 3250 50  0001 C CNN
-F 1 "GND" H 3305 3327 50  0000 C CNN
-F 2 "" H 3300 3500 50  0001 C CNN
-F 3 "" H 3300 3500 50  0001 C CNN
-	1    3300 3500
+P 2750 3500
+F 0 "#PWR0102" H 2750 3250 50  0001 C CNN
+F 1 "GND" H 2755 3327 50  0000 C CNN
+F 2 "" H 2750 3500 50  0001 C CNN
+F 3 "" H 2750 3500 50  0001 C CNN
+	1    2750 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 3100 3300 3150
+	2750 3100 2750 3150
 Wire Wire Line
-	3300 3500 3300 3450
+	2750 3500 2750 3450
 Wire Wire Line
-	3300 3150 3650 3150
+	2750 3150 3100 3150
 Wire Wire Line
-	3650 3150 3650 3200
-Connection ~ 3300 3150
+	3100 3150 3100 3200
+Connection ~ 2750 3150
 Wire Wire Line
-	3300 3150 3300 3200
+	2750 3150 2750 3200
 Wire Wire Line
-	3650 3400 3650 3450
+	3100 3400 3100 3450
 Wire Wire Line
-	3650 3450 3300 3450
-Connection ~ 3300 3450
+	3100 3450 2750 3450
+Connection ~ 2750 3450
 Wire Wire Line
-	3300 3450 3300 3400
+	2750 3450 2750 3400
 $Comp
 L Device:R_Small R10
 U 1 1 5F835A2A
@@ -117,12 +117,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0104
 U 1 1 5F84970A
-P 1950 5750
-F 0 "#PWR0104" H 1950 5500 50  0001 C CNN
-F 1 "GND" H 1955 5577 50  0000 C CNN
-F 2 "" H 1950 5750 50  0001 C CNN
-F 3 "" H 1950 5750 50  0001 C CNN
-	1    1950 5750
+P 1550 5700
+F 0 "#PWR0104" H 1550 5450 50  0001 C CNN
+F 1 "GND" H 1555 5527 50  0000 C CNN
+F 2 "" H 1550 5700 50  0001 C CNN
+F 3 "" H 1550 5700 50  0001 C CNN
+	1    1550 5700
 	1    0    0    -1  
 $EndComp
 Text GLabel 5550 1650 2    50   Input ~ 0
@@ -134,7 +134,7 @@ Wire Wire Line
 Connection ~ 5150 1650
 Wire Wire Line
 	5150 1650 5150 1700
-Text GLabel 1950 2950 1    50   Input ~ 0
+Text GLabel 1550 2900 1    50   Input ~ 0
 VDD
 Text GLabel 5550 1350 2    50   Input ~ 0
 VDD
@@ -143,68 +143,68 @@ Wire Wire Line
 $Comp
 L RF_Module:ESP32-WROOM-32D U1
 U 1 1 5F82E3C6
-P 1950 4350
-F 0 "U1" H 2400 5700 50  0000 C CNN
-F 1 "ESP32-WROOM-32E" H 2350 3000 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 1950 2850 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 1650 4400 50  0001 C CNN
-F 4 "C701343" H 1950 4350 50  0001 C CNN "LCSC Part #"
-	1    1950 4350
+P 1550 4300
+F 0 "U1" H 2000 5650 50  0000 C CNN
+F 1 "ESP32-WROOM-32E" H 1950 2950 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 1550 2800 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 1250 4350 50  0001 C CNN
+F 4 "C701343" H 1550 4300 50  0001 C CNN "LCSC Part #"
+	1    1550 4300
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 3450 2    50   Input ~ 0
+Text GLabel 2150 3400 2    50   Input ~ 0
 RXD0
-Text GLabel 2550 3250 2    50   Input ~ 0
+Text GLabel 2150 3200 2    50   Input ~ 0
 TXD0
-Text GLabel 2550 3950 2    50   Input ~ 0
+Text GLabel 2150 3900 2    50   Input ~ 0
 IO14
-Text GLabel 2550 3750 2    50   Input ~ 0
+Text GLabel 2150 3700 2    50   Input ~ 0
 IO12
-Text GLabel 2550 3850 2    50   Input ~ 0
+Text GLabel 2150 3800 2    50   Input ~ 0
 IO13
-Text GLabel 1350 3150 0    50   Input ~ 0
+Text GLabel 950  3100 0    50   Input ~ 0
 RESET
-Text GLabel 2550 3150 2    50   Input ~ 0
+Text GLabel 2150 3100 2    50   Input ~ 0
 GPIO0
-Text GLabel 2550 4650 2    50   Input ~ 0
+Text GLabel 2150 4600 2    50   Input ~ 0
 IO22
-Text GLabel 2550 4550 2    50   Input ~ 0
+Text GLabel 2150 4500 2    50   Input ~ 0
 IO21
-Text GLabel 2550 3550 2    50   Input ~ 0
+Text GLabel 2150 3500 2    50   Input ~ 0
 IO4
-Text GLabel 2550 4350 2    50   Input ~ 0
+Text GLabel 2150 4300 2    50   Input ~ 0
 IO18
-Text GLabel 2550 4050 2    50   Input ~ 0
+Text GLabel 2150 4000 2    50   Input ~ 0
 IO15
-Text GLabel 2550 4150 2    50   Input ~ 0
+Text GLabel 2150 4100 2    50   Input ~ 0
 IO16
-Text GLabel 2550 4250 2    50   Input ~ 0
+Text GLabel 2150 4200 2    50   Input ~ 0
 IO17
-Text GLabel 2550 4750 2    50   Input ~ 0
+Text GLabel 2150 4700 2    50   Input ~ 0
 IO23
-Text GLabel 2550 4450 2    50   Input ~ 0
+Text GLabel 2150 4400 2    50   Input ~ 0
 IO19
-Text GLabel 2550 4850 2    50   Input ~ 0
+Text GLabel 2150 4800 2    50   Input ~ 0
 IO25_DAC1
-Text GLabel 2550 4950 2    50   Input ~ 0
+Text GLabel 2150 4900 2    50   Input ~ 0
 IO26_DAC2
-Text GLabel 2550 5050 2    50   Input ~ 0
+Text GLabel 2150 5000 2    50   Input ~ 0
 IO27
-Text GLabel 2550 5150 2    50   Input ~ 0
+Text GLabel 2150 5100 2    50   Input ~ 0
 IO32
-Text GLabel 2550 5250 2    50   Input ~ 0
+Text GLabel 2150 5200 2    50   Input ~ 0
 IO33
-Text GLabel 2550 5350 2    50   Input ~ 0
+Text GLabel 2150 5300 2    50   Input ~ 0
 I34
-Text GLabel 2550 5450 2    50   Input ~ 0
+Text GLabel 2150 5400 2    50   Input ~ 0
 I35
-NoConn ~ 1350 4350
-NoConn ~ 1350 4450
-NoConn ~ 1350 4550
-NoConn ~ 1350 4650
-NoConn ~ 1350 4750
-NoConn ~ 1350 4850
-Text GLabel 1350 3450 0    50   Input ~ 0
+NoConn ~ 950  4300
+NoConn ~ 950  4400
+NoConn ~ 950  4500
+NoConn ~ 950  4600
+NoConn ~ 950  4700
+NoConn ~ 950  4800
+Text GLabel 950  3400 0    50   Input ~ 0
 I39
 $Comp
 L myLib:RT9080-33GJ5 U2
@@ -487,62 +487,62 @@ Connection ~ 5150 1350
 $Comp
 L power:+BATT #PWR0120
 U 1 1 5F8F184F
-P 4450 3050
-F 0 "#PWR0120" H 4450 2900 50  0001 C CNN
-F 1 "+BATT" H 4465 3223 50  0000 C CNN
-F 2 "" H 4450 3050 50  0001 C CNN
-F 3 "" H 4450 3050 50  0001 C CNN
-	1    4450 3050
+P 3900 3000
+F 0 "#PWR0120" H 3900 2850 50  0001 C CNN
+F 1 "+BATT" H 3915 3173 50  0000 C CNN
+F 2 "" H 3900 3000 50  0001 C CNN
+F 3 "" H 3900 3000 50  0001 C CNN
+	1    3900 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5F8F2681
-P 4450 3200
-F 0 "R5" H 4509 3246 50  0000 L CNN
-F 1 "100k" H 4509 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4450 3200 50  0001 C CNN
-F 3 "~" H 4450 3200 50  0001 C CNN
-F 4 "C25741" H 4450 3200 50  0001 C CNN "LCSC Part #"
-	1    4450 3200
+P 3900 3150
+F 0 "R5" H 3959 3196 50  0000 L CNN
+F 1 "100k" H 3959 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3900 3150 50  0001 C CNN
+F 3 "~" H 3900 3150 50  0001 C CNN
+F 4 "C25741" H 3900 3150 50  0001 C CNN "LCSC Part #"
+	1    3900 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 5F8F2CCD
-P 4450 3500
-F 0 "R6" H 4509 3546 50  0000 L CNN
-F 1 "100k" H 4509 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4450 3500 50  0001 C CNN
-F 3 "~" H 4450 3500 50  0001 C CNN
-F 4 "C25741" H 4450 3500 50  0001 C CNN "LCSC Part #"
-	1    4450 3500
+P 3900 3450
+F 0 "R6" H 3959 3496 50  0000 L CNN
+F 1 "100k" H 3959 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3900 3450 50  0001 C CNN
+F 3 "~" H 3900 3450 50  0001 C CNN
+F 4 "C25741" H 3900 3450 50  0001 C CNN "LCSC Part #"
+	1    3900 3450
 	1    0    0    -1  
 $EndComp
-Text GLabel 4350 3350 0    50   Input ~ 0
+Text GLabel 3800 3300 0    50   Input ~ 0
 I35
 Wire Wire Line
-	4450 3300 4450 3350
+	3900 3250 3900 3300
 Wire Wire Line
-	4450 3100 4450 3050
+	3900 3050 3900 3000
 Wire Wire Line
-	4350 3350 4450 3350
-Connection ~ 4450 3350
+	3800 3300 3900 3300
+Connection ~ 3900 3300
 Wire Wire Line
-	4450 3350 4450 3400
+	3900 3300 3900 3350
 $Comp
 L power:GND #PWR0121
 U 1 1 5F8F7571
-P 4450 3700
-F 0 "#PWR0121" H 4450 3450 50  0001 C CNN
-F 1 "GND" H 4455 3527 50  0000 C CNN
-F 2 "" H 4450 3700 50  0001 C CNN
-F 3 "" H 4450 3700 50  0001 C CNN
-	1    4450 3700
+P 3900 3650
+F 0 "#PWR0121" H 3900 3400 50  0001 C CNN
+F 1 "GND" H 3905 3477 50  0000 C CNN
+F 2 "" H 3900 3650 50  0001 C CNN
+F 3 "" H 3900 3650 50  0001 C CNN
+	1    3900 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 3700 4450 3600
+	3900 3650 3900 3550
 $Comp
 L Device:Q_NPN_BEC Q2
 U 1 1 5F8F9385
@@ -737,16 +737,16 @@ Wire Wire Line
 $Comp
 L power:VBUS #PWR0126
 U 1 1 5F9C3B9A
-P 950 6550
-F 0 "#PWR0126" H 950 6400 50  0001 C CNN
-F 1 "VBUS" H 965 6723 50  0000 C CNN
-F 2 "" H 950 6550 50  0001 C CNN
-F 3 "" H 950 6550 50  0001 C CNN
-	1    950  6550
+P 850 6550
+F 0 "#PWR0126" H 850 6400 50  0001 C CNN
+F 1 "VBUS" H 865 6723 50  0000 C CNN
+F 2 "" H 850 6550 50  0001 C CNN
+F 3 "" H 850 6550 50  0001 C CNN
+	1    850  6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  6550 950  6600
+	850  6550 850  6600
 $Comp
 L Device:C_Small C1
 U 1 1 5F9CA5C2
@@ -1058,7 +1058,7 @@ Text GLabel 7700 3000 0    50   Input ~ 0
 RXD0
 Text GLabel 7700 3100 0    50   Input ~ 0
 TXD0
-Text GLabel 2550 3350 2    50   Input ~ 0
+Text GLabel 2150 3300 2    50   Input ~ 0
 IO2
 Text GLabel 7700 3900 0    50   Input ~ 0
 IO2
@@ -1153,7 +1153,7 @@ Text GLabel 7550 3500 0    50   Input ~ 0
 IO32
 Wire Wire Line
 	7550 3500 7700 3500
-Text GLabel 1350 3350 0    50   Input ~ 0
+Text GLabel 950  3300 0    50   Input ~ 0
 I36
 Text GLabel 7700 4200 0    50   Input ~ 0
 EN
@@ -1172,7 +1172,7 @@ F 3 "" H 7200 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 4300 7200 4300
-Text GLabel 2550 3650 2    50   Input ~ 0
+Text GLabel 2150 3600 2    50   Input ~ 0
 IO5
 $Comp
 L power:GND #PWR0105
@@ -1644,5 +1644,21 @@ F 4 "C8598" H 1250 6600 50  0001 C CNN "LCSC Part #"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	950  6600 1100 6600
+	850  6600 1100 6600
+Text Notes 750  7150 0    50   ~ 0
+Vf=0.4 x 500mA\n→ 200mW\n→ +40°C\n→ Ambient 25°C\n→ 65°C
+Text Notes 6400 6050 0    50   ~ 0
+Iq=3uA
+Wire Notes Line
+	1050 6300 1050 6700
+Wire Notes Line
+	1050 6700 1450 6700
+Wire Notes Line
+	1450 6700 1450 6300
+Wire Notes Line
+	1450 6300 1050 6300
+Text Notes 3500 6400 0    50   ~ 0
+Iq<2uA
+Text Notes 3850 2700 0    50   ~ 0
+Iq=19.5uA
 $EndSCHEMATC
