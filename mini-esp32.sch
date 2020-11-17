@@ -1635,8 +1635,8 @@ Wire Wire Line
 	850  6600 1100 6600
 Text Notes 750  7150 0    50   ~ 0
 Vf=0.4 x 500mA\n→ 200mW\n→ +40°C\n→ Ambient 25°C\n→ 65°C
-Text Notes 6400 6050 0    50   ~ 0
-Iq=3uA
+Text Notes 5500 5700 0    50   ~ 0
+Iq=3uA\nOC=4.250V\nOD=2.90V
 Wire Notes Line
 	1050 6300 1050 6700
 Wire Notes Line
@@ -1694,4 +1694,8 @@ Text Notes 9450 700  0    50   ~ 0
 USB TO SERIAL LDO
 Wire Notes Line
 	9400 500  9400 2400
+Text Notes 2900 1050 0    50   ~ 0
+Iq = Typ 2uA / Max 4uA\nDropout V = Typ 0.31V / Max 0.53V
+Text Notes 1700 2800 0    50   ~ 0
+VCC = 2.3 - 3.6 V
 $EndSCHEMATC
