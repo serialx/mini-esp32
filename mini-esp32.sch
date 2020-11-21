@@ -1698,4 +1698,6 @@ Text Notes 2900 1050 0    50   ~ 0
 Iq = Typ 2uA / Max 4uA\nDropout V = Typ 0.31V / Max 0.53V
 Text Notes 1700 2800 0    50   ~ 0
 VCC = 2.3 - 3.6 V
+Text Notes 3550 5950 0    50   ~ 0
+Auto program\nDTR RTS EN IO0\n1    1   1  1\n0    0   1  1\n1    0   0  1\n0    1   1  0
 $EndSCHEMATC
