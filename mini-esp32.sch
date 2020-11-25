@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Mini ESP32"
 Date "2020-10-11"
-Rev "3.0.1"
+Rev "4.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -383,15 +383,8 @@ Wire Wire Line
 	1950 1850 1950 1750
 Wire Wire Line
 	1800 900  1800 850 
-Text GLabel 2650 1900 0    50   Input ~ 0
+Text GLabel 2700 1800 0    50   Input ~ 0
 EN
-Wire Wire Line
-	2650 1900 2700 1900
-Wire Wire Line
-	2700 1900 2700 1800
-Connection ~ 2700 1800
-Wire Wire Line
-	2700 1800 2250 1800
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5F8AB913
@@ -1237,99 +1230,6 @@ Wire Wire Line
 Connection ~ 1450 1500
 Wire Wire Line
 	1100 1000 1100 1500
-$Comp
-L power:+BATT #PWR0107
-U 1 1 5FBE7D4B
-P 5200 5800
-F 0 "#PWR0107" H 5200 5650 50  0001 C CNN
-F 1 "+BATT" H 5215 5973 50  0000 C CNN
-F 2 "" H 5200 5800 50  0001 C CNN
-F 3 "" H 5200 5800 50  0001 C CNN
-	1    5200 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 6600 5400 6600
-$Comp
-L Transistor_FET:AO3400A Q6
-U 1 1 5FBFA0D1
-P 6200 7250
-F 0 "Q6" V 6449 7250 50  0000 C CNN
-F 1 "AO3400A" V 6540 7250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6400 7175 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 6200 7250 50  0001 L CNN
-F 4 "C20917" H 6200 7250 50  0001 C CNN "LCSC Part #"
-	1    6200 7250
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	5850 7350 6000 7350
-$Comp
-L Transistor_FET:AO3400A Q5
-U 1 1 5FBF3F7C
-P 5650 7250
-F 0 "Q5" V 5899 7250 50  0000 C CNN
-F 1 "AO3400A" V 5990 7250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5850 7175 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf" H 5650 7250 50  0001 L CNN
-F 4 "C20917" H 5650 7250 50  0001 C CNN "LCSC Part #"
-	1    5650 7250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5650 7050 5650 7000
-Wire Wire Line
-	6200 7050 6200 7000
-Wire Wire Line
-	6750 7350 6550 7350
-$Comp
-L Device:R_Small R15
-U 1 1 5FC2A966
-P 6550 6950
-F 0 "R15" H 6609 6996 50  0000 L CNN
-F 1 "1k" H 6609 6905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 6950 50  0001 C CNN
-F 3 "~" H 6550 6950 50  0001 C CNN
-F 4 "C11702" H 6550 6950 50  0001 C CNN "LCSC Part #"
-	1    6550 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L myLib:FS312F-G U5
-U 1 1 5FBE4449
-P 5900 6000
-F 0 "U5" H 5900 6065 50  0000 C CNN
-F 1 "FS312F-G" H 5900 5974 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5900 6000 50  0001 C CNN
-F 3 "" H 5900 6000 50  0001 C CNN
-F 4 "C82736" H 5900 6000 50  0001 C CNN "LCSC Part #"
-	1    5900 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 7050 6550 7350
-Connection ~ 6550 7350
-Wire Wire Line
-	6550 7350 6400 7350
-Wire Wire Line
-	5200 7350 5200 7100
-$Comp
-L Device:C_Small C11
-U 1 1 5FC424C5
-P 5200 6400
-F 0 "C11" H 5292 6446 50  0000 L CNN
-F 1 "100n" H 5292 6355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5200 6400 50  0001 C CNN
-F 3 "~" H 5200 6400 50  0001 C CNN
-F 4 "C1525" H 5200 6400 50  0001 C CNN "LCSC Part #"
-	1    5200 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 6300 5200 6250
-Wire Wire Line
-	5200 6600 5200 6500
-Connection ~ 5200 6600
 Wire Wire Line
 	6100 4900 6250 4900
 Wire Wire Line
@@ -1373,102 +1273,23 @@ F 4 "C72041" H 5700 4900 50  0001 C CNN "LCSC Part #"
 	1    5700 4900
 	-1   0    0    1   
 $EndComp
-Text GLabel 4150 1900 0    50   Input ~ 0
-BAT+
-Wire Wire Line
-	4150 2000 4200 2000
-Wire Wire Line
-	4150 1900 4200 1900
-Text GLabel 5300 5900 2    50   Input ~ 0
-BAT+
-Wire Wire Line
-	5300 5900 5200 5900
-Wire Wire Line
-	5200 5900 5200 5800
-Text GLabel 5300 7100 2    50   Input ~ 0
-BAT-
-Wire Wire Line
-	5300 7100 5200 7100
-Connection ~ 5200 7100
-Wire Wire Line
-	5200 7100 5200 6600
-$Comp
-L power:GND #PWR0108
-U 1 1 5FCB8A37
-P 6750 7350
-F 0 "#PWR0108" H 6750 7100 50  0001 C CNN
-F 1 "GND" H 6755 7177 50  0000 C CNN
-F 2 "" H 6750 7350 50  0001 C CNN
-F 3 "" H 6750 7350 50  0001 C CNN
-	1    6750 7350
-	1    0    0    -1  
-$EndComp
 Text Notes 5100 5400 0    50   ~ 0
-BATTERY PROTECTION
+VOLTAGE SUPERVISOR
 Wire Notes Line
 	4900 5150 6900 5150
-Wire Wire Line
-	5450 7350 5200 7350
-Wire Wire Line
-	5650 7000 5800 7000
-Wire Wire Line
-	6050 7000 6200 7000
-Wire Wire Line
-	6400 6650 6550 6650
-Wire Wire Line
-	6550 6650 6550 6850
-Text GLabel 4150 2000 0    50   Input ~ 0
-BAT-
 Wire Wire Line
 	8800 1200 8950 1200
 Wire Wire Line
 	1950 1500 2250 1500
-$Comp
-L Device:R_Small R3
-U 1 1 5FB3AA5C
-P 2250 1650
-F 0 "R3" H 2309 1696 50  0000 L CNN
-F 1 "10k" H 2309 1605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2250 1650 50  0001 C CNN
-F 3 "~" H 2250 1650 50  0001 C CNN
-F 4 "C25744" H 2250 1650 50  0001 C CNN "LCSC Part #"
-	1    2250 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 1550 2250 1500
 Connection ~ 2250 1500
 Wire Wire Line
-	2250 1500 2800 1500
-Wire Wire Line
-	2250 1750 2250 1800
-Wire Wire Line
 	3850 5350 4000 5350
 Wire Wire Line
 	3850 4700 4000 4700
-NoConn ~ 5400 6750
-$Comp
-L Device:R_Small R12
-U 1 1 5FBAC8E8
-P 5200 6100
-F 0 "R12" V 5004 6100 50  0000 C CNN
-F 1 "100R" V 5095 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5200 6100 50  0001 C CNN
-F 3 "~" H 5200 6100 50  0001 C CNN
-F 4 "C25076" H 5200 6100 50  0001 C CNN "LCSC Part #"
-	1    5200 6100
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	5200 5900 5200 6000
-Connection ~ 5200 5900
 Wire Notes Line
 	4900 500  4900 7800
-Wire Wire Line
-	5400 6250 5200 6250
-Connection ~ 5200 6250
-Wire Wire Line
-	5200 6250 5200 6200
 Connection ~ 10600 1400
 Wire Wire Line
 	10600 1300 10600 1400
@@ -1608,18 +1429,6 @@ $EndComp
 Wire Wire Line
 	8800 800  9150 800 
 $Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5FC5E9DE
-P 4200 1900
-F 0 "#FLG0101" H 4200 1975 50  0001 C CNN
-F 1 "PWR_FLAG" H 4200 2073 50  0000 C CNN
-F 2 "" H 4200 1900 50  0001 C CNN
-F 3 "~" H 4200 1900 50  0001 C CNN
-	1    4200 1900
-	1    0    0    -1  
-$EndComp
-Connection ~ 4200 1900
-$Comp
 L Device:D_Schottky D4
 U 1 1 5FCD5A57
 P 1250 6600
@@ -1635,8 +1444,8 @@ Wire Wire Line
 	850  6600 1100 6600
 Text Notes 750  7150 0    50   ~ 0
 Vf=0.4 x 500mA\n→ 200mW\n→ +40°C\n→ Ambient 25°C\n→ 65°C
-Text Notes 5500 5700 0    50   ~ 0
-Iq=3uA\nOC=4.250V\nOD=2.90V
+Text Notes 6350 5450 0    50   ~ 0
+Vth: 2.93 V\nIq: 150 nA
 Wire Notes Line
 	1050 6300 1050 6700
 Wire Notes Line
@@ -1700,4 +1509,119 @@ Text Notes 1700 2800 0    50   ~ 0
 VCC = 2.3 - 3.6 V
 Text Notes 3550 5950 0    50   ~ 0
 Auto program\nDTR RTS EN IO0\n1    1   1  1\n0    0   1  1\n1    0   0  1\n0    1   1  0
+$Comp
+L power:GND #PWR0107
+U 1 1 5FBEE08C
+P 4150 2000
+F 0 "#PWR0107" H 4150 1750 50  0001 C CNN
+F 1 "GND" H 4155 1827 50  0000 C CNN
+F 2 "" H 4150 2000 50  0001 C CNN
+F 3 "" H 4150 2000 50  0001 C CNN
+	1    4150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0108
+U 1 1 5FBEE4D3
+P 4150 1900
+F 0 "#PWR0108" H 4150 1750 50  0001 C CNN
+F 1 "+BATT" H 4165 2073 50  0000 C CNN
+F 2 "" H 4150 1900 50  0001 C CNN
+F 3 "" H 4150 1900 50  0001 C CNN
+	1    4150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1900 4200 1900
+Wire Wire Line
+	4150 2000 4200 2000
+$Comp
+L Power_Supervisor:TPS3839DBZ U5
+U 1 1 5FC2BC90
+P 5850 6550
+F 0 "U5" H 5721 6596 50  0000 R CNN
+F 1 "TPS3839K33DBZR" H 5721 6505 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5850 6550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/sbvs193d/sbvs193d.pdf" H 5850 6550 50  0001 C CNN
+F 4 "C96333" H 5850 6550 50  0001 C CNN "LCSC Part #"
+	1    5850 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1500 2550 1500
+$Comp
+L power:VCC #PWR0116
+U 1 1 5FC2F87D
+P 2550 1400
+F 0 "#PWR0116" H 2550 1250 50  0001 C CNN
+F 1 "VCC" H 2565 1573 50  0000 C CNN
+F 2 "" H 2550 1400 50  0001 C CNN
+F 3 "" H 2550 1400 50  0001 C CNN
+	1    2550 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1500 2550 1400
+Connection ~ 2550 1500
+Wire Wire Line
+	2550 1500 2800 1500
+$Comp
+L power:VCC #PWR0117
+U 1 1 5FC34DE1
+P 5850 6100
+F 0 "#PWR0117" H 5850 5950 50  0001 C CNN
+F 1 "VCC" H 5865 6273 50  0000 C CNN
+F 2 "" H 5850 6100 50  0001 C CNN
+F 3 "" H 5850 6100 50  0001 C CNN
+	1    5850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5FC40CF3
+P 5850 6950
+F 0 "#PWR0122" H 5850 6700 50  0001 C CNN
+F 1 "GND" H 5855 6777 50  0000 C CNN
+F 2 "" H 5850 6950 50  0001 C CNN
+F 3 "" H 5850 6950 50  0001 C CNN
+	1    5850 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 6950 5850 6850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FC47EE1
+P 3900 1900
+F 0 "#FLG0101" H 3900 1975 50  0001 C CNN
+F 1 "PWR_FLAG" H 3900 2073 50  0000 C CNN
+F 2 "" H 3900 1900 50  0001 C CNN
+F 3 "~" H 3900 1900 50  0001 C CNN
+	1    3900 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1900 4150 1900
+Connection ~ 4150 1900
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FC4EDFC
+P 2250 1400
+F 0 "#FLG0102" H 2250 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2250 1573 50  0000 C CNN
+F 2 "" H 2250 1400 50  0001 C CNN
+F 3 "~" H 2250 1400 50  0001 C CNN
+	1    2250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1400 2250 1500
+Wire Wire Line
+	6450 6550 6250 6550
+Text GLabel 6450 6550 2    50   Input ~ 0
+EN
+Wire Wire Line
+	5850 6100 5850 6250
+Wire Wire Line
+	2650 1900 2700 1900
 $EndSCHEMATC
